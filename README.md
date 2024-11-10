@@ -11,22 +11,46 @@ Git permite a los desarrolladores colaborar de manera eficiente, manteniendo un 
 
 ## Listado de ramas
 
-git branch: Muestra una lista de todas las ramas en el repositorio. La rama actual aparece resaltada con un asterisco *.
+Muestra una lista de todas las ramas en el repositorio. La rama actual aparece resaltada con un asterisco *.
 git branch -a: Lista todas las ramas, incluidas las remotas.
 
+~~~
+git branch
+~~~
+
+~~~
+
+~~~
 
 ## Borrado de ramas
 
+Elimina una rama de manera segura si ya ha sido fusionada.
 
-git branch -d <nombre-de-rama>: Elimina una rama de manera segura si ya ha sido fusionada.
-git branch -D <nombre-de-rama>: Elimina una rama forzosamente, sin importar si ha sido fusionada o no.
+~~~
+git branch -d <nombre-de-rama>
+~~~
+
+Elimina una rama forzosamente, sin importar si ha sido fusionada o no.
+
+~~~
+git branch -D <nombre-de-rama>
+~~~
 
 ## Enviar cambios al repositorio remoto (push)
 
-git push origin <nombre-de-rama>: Sube los cambios de una rama local al repositorio remoto, permitiendo que otros colaboradores accedan a las últimas modificaciones.
+Sube los cambios de una rama local al repositorio remoto, permitiendo que otros colaboradores accedan a las últimas modificaciones.
+
+~~~
+git push origin <nombre-de-rama> 
+~~~
 
 ## Obtener cambios del repositorio remoto (pull)
-git pull: Descarga y fusiona los cambios desde la rama remota a la rama actual en el repositorio local. Es una combinación de fetch y merge.
+
+Descarga y fusiona los cambios desde la rama remota a la rama actual en el repositorio local. Es una combinación de fetch y merge.
+
+~~~
+git pull
+~~~
 
 ## Fusionar ramas (merge)
 git merge <nombre-de-rama>: Fusiona la rama especificada con la rama actual. Este comando se usa para combinar el trabajo de diferentes ramas en una sola.
