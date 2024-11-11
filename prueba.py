@@ -1,4 +1,6 @@
 print("hola soy fernando")
 print("hola soy jose")
 print("sin error")
-print("a ver que pasa")
+print("verifico que no hay errores, mu bien hablao")
+
+print("codio añadido despues de mucho trabajo y esfuerzo")
