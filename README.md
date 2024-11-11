@@ -48,7 +48,7 @@ Para cambiar de rama
 git switch <nombre-de-rama>
 ~~~
 
-O
+O:
 
 ~~~
 git checkout <nombre-de-rama>
@@ -80,7 +80,39 @@ Lista todas las ramas, incluidas las remotas.
 git branch -a
 ~~~
 
-## Push (enviar cambios al repositorio remoto)
+## Add, Status, Commit
+
+Cada vez que queramos guardar un cambio, tendremos que hacer un `git commit`, para ello tendremos que añadir el archivo o directorio que queramos guardar con `git add <nombre>`.
+
+### Add
+
+Selecciona el/los archivos de los que queramos guardar cambios, y se quedarán a la espera de que hagamos un `commit`.
+
+~~~
+git add .
+~~~
+
+### Status
+
+Para ver los archivos que tenemos seleccionados, pondremos el siguiente comando:
+
+~~~
+git status
+~~~
+
+Nos saldrán el/los archivos en rojo si no están añadidos con el `git add`. Una vez hecho saldrán en verde.
+
+### Commit
+
+Para guardar los cambios.
+
+~~~
+git commit -m "mensaje"
+~~~
+
+Usaremos el `-m "mensaje"` para poner una descripción sobre el cambio que se ha realizado.
+
+## Push
 
 Sube los cambios de una rama local al repositorio remoto, permitiendo que otros colaboradores accedan a las últimas modificaciones.
 
@@ -96,22 +128,24 @@ git push --set-upstream origin <rama>
 
 Ya una vez puesto el comando, bastará con poner `git push`, porque el `origin` establece la rama como predeterminada.
 
-## Pull (obtener cambios del repositorio remoto)
+## Pull
 
-Descarga y fusiona los cambios desde la rama remota a la rama actual en el repositorio local. Es una combinación de fetch y merge.
+Descarga y fusiona los cambios desde la rama remota a la rama actual en el repositorio local.
 
 ~~~
 git pull
 ~~~
 
-## Merge (fusionar ramas)
+## Merge
 Fusiona la rama especificada con la rama actual. Este comando se usa para combinar el trabajo de diferentes ramas en una sola.
+
+Tienes que estar situado en la rama en la que quieras volcar los cambios:
 
 ~~~
 git merge <nombre-de-rama>
 ~~~
 
-## Stash (guardar cambios temporalmente)
+## Stash
 Guarda temporalmente los cambios sin comprometerlos en el historial. Esto permite cambiar a otra rama sin perder el trabajo actual.
 
 ~~~
