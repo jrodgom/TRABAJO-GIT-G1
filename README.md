@@ -9,15 +9,19 @@ Git permite a los desarrolladores colaborar de manera eficiente, manteniendo un 
 
 # Comandos esenciales de Git
 
-## Listado de ramas
+## Git init
+Sirve para crear un repositorio Git local vacío o reinicializa uno existente. Aunque con git clone (ahora lo veremos) no hace falta porque nos estamos trayendo un repositorio desde la nube.
 
-Muestra una lista de todas las ramas en el repositorio. La rama actual aparece resaltada con un asterisco *.
 ~~~
-git branch
+git init
 ~~~
-Lista todas las ramas, incluidas las remotas.
+
+## Clonar repositorio
+
+Para clonar un repositorio desde la nube a local usaremos este comando:
+
 ~~~
-git branch -a
+git clone <url-https>
 ~~~
 
 ## Creación, navegación y borrado de ramas
@@ -30,7 +34,7 @@ Para crear una rama
 git branch <nombre-de-rama>
 ~~~
 
-o si queremos crearla y movernos a la rama que estamos creando directamente
+O si queremos crearla y movernos a la rama que estamos creando directamente
 
 ~~~
 git checkout -b <nombre-de-rama>
@@ -39,6 +43,12 @@ git checkout -b <nombre-de-rama>
 ### Navegar entre ramas
 
 Para cambiar de rama
+
+~~~
+git switch <nombre-de-rama>
+~~~
+
+O
 
 ~~~
 git checkout <nombre-de-rama>
@@ -58,13 +68,33 @@ Elimina una rama forzosamente, sin importar si ha sido fusionada o no.
 git branch -D <nombre-de-rama>
 ~~~
 
+## Listado de ramas
+
+Muestra una lista de todas las ramas en el repositorio. La rama actual aparece resaltada con un asterisco *.
+~~~
+git branch
+~~~
+
+Lista todas las ramas, incluidas las remotas.
+~~~
+git branch -a
+~~~
+
 ## Push (enviar cambios al repositorio remoto)
 
 Sube los cambios de una rama local al repositorio remoto, permitiendo que otros colaboradores accedan a las últimas modificaciones.
 
 ~~~
-git push origin <nombre-de-rama> 
+git push
 ~~~
+
+Si no tenemos creado en el repositorio remoto la rama, tendremos que poner este comando (si creamos una rama a parte del main, que ya viene creado por defecto en el repositorio remoto):
+
+~~~
+git push --set-upstream origin <rama>
+~~~
+
+Ya una vez puesto el comando, bastará con poner `git push`, porque el `origin` establece la rama como predeterminada.
 
 ## Pull (obtener cambios del repositorio remoto)
 
