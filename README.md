@@ -115,6 +115,12 @@ Permite aplicar los cambios de un commit específico de otra rama a la rama actu
 git cherry-pick <id-del-commit>
 ~~~
 
+## Descargar ramas remotas
+
+~~~
+git checkout -b nombre-de-la-rama origin/rama-jose
+~~~
+
 ## Pull Request
 Un Pull Request es una solicitud de integración de cambios en el repositorio principal, especialmente en plataformas como GitHub o GitLab. A través de un Pull Request, los colaboradores pueden revisar, discutir y aprobar cambios antes de integrarlos a la rama principal.
 
