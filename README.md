@@ -20,7 +20,31 @@ Lista todas las ramas, incluidas las remotas.
 git branch -a
 ~~~
 
-## Borrado de ramas
+## Creación, navegación y borrado de ramas
+
+### Crear rama
+
+Para crear una rama
+
+~~~
+git branch <nombre-de-rama>
+~~~
+
+o si queremos crearla y movernos a la rama que estamos creando directamente
+
+~~~
+git checkout -b <nombre-de-rama>
+~~~
+
+### Navegar entre ramas
+
+Para cambiar de rama
+
+~~~
+git checkout <nombre-de-rama>
+~~~
+
+### Eliminar una rama
 
 Elimina una rama de manera segura si ya ha sido fusionada.
 
