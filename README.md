@@ -88,12 +88,6 @@ Guarda temporalmente los cambios sin comprometerlos en el historial. Esto permit
 git stash
 ~~~
 
-Recupera los cambios guardados con git stash y los aplica a la rama actual, eliminándolos de la pila de stashes.
-
-~~~
-git stash pop: 
-~~~
-
 ## Amend (editar el último commit)
 Permite modificar el último commit, ya sea para cambiar su mensaje o agregar archivos omitidos. Es útil para corregir errores en el commit anterior.
 
