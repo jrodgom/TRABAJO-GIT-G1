@@ -187,7 +187,7 @@ git checkout -b nombre-de-la-rama origin/rama-jose
 ~~~
 
 ## Pull Request
-Un Pull Request es una solicitud de integración de cambios en el repositorio principal, especialmente en plataformas como GitHub o GitLab. A través de un Pull Request, los colaboradores pueden revisar, discutir y aprobar cambios antes de integrarlos a la rama principal.
+Un Pull Request es una solicitud de integración de cambios en el repositorio principal. A través de un Pull Request, los colaboradores pueden revisar, discutir y aprobar cambios antes de integrarlos a la rama principal.
 
 ## Provocar un conflicto en un Pull Request
 Los conflictos en Git suelen ocurrir cuando dos ramas modifican las mismas líneas de un archivo de forma diferente. Para provocar un conflicto en un Pull Request:
