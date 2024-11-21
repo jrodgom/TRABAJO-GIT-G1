@@ -28,6 +28,8 @@ Para crear una rama
 
 ~~~
 git branch <nombre-de-rama>
+git checkout -b nombre-de-la-rama origin/nombre-de-la-rama (si es desde remoto)
+
 ~~~
 
 o si queremos crearla y movernos a la rama que estamos creando directamente
