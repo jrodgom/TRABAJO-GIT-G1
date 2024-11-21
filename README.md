@@ -146,10 +146,15 @@ git merge <nombre-de-rama>
 ~~~
 
 ## Stash
-Guarda temporalmente los cambios sin comprometerlos en el historial. Esto permite cambiar a otra rama sin perder el trabajo actual.
-
+Es como guardar tus apuntes en una "caja temporal" para que puedas despejar tu escritorio y trabajar en algo nuevo. Cuando terminas, puedes abrir la caja y retomar donde lo dejaste.
 ~~~
 git stash
+~~~
+
+### Apply
+
+~~~
+git stash apply
 ~~~
 
 ## Amend (editar el último commit)
