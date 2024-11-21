@@ -147,15 +147,17 @@ git merge <nombre-de-rama>
 
 ## Stash
 Es como guardar tus apuntes en una "caja temporal" para que puedas despejar tu escritorio y trabajar en algo nuevo. Cuando terminas, puedes abrir la caja y retomar donde lo dejaste.
-~~~
-git stash
-~~~
 
-### Apply
+## Comandos esenciales de `git stash`
 
-~~~
-git stash apply
-~~~
+| Comando                  | Descripción                                                |
+|--------------------------|------------------------------------------------------------|
+| `git stash`              | Guarda los cambios actuales en la pila y limpia el área de trabajo. |
+| `git stash apply`        | Recupera los cambios más recientes de la pila.             |
+| `git stash drop`         | Elimina el stash más reciente de la pila.                  |
+| `git stash list`         | Muestra todos los *stashes* almacenados.                   |
+| `git stash pop`          | Recupera el stash más reciente y lo elimina de la pila.    |
+
 
 ## Amend (editar el último commit)
 Permite modificar el último commit, ya sea para cambiar su mensaje o agregar archivos omitidos. Es útil para corregir errores en el commit anterior.
